@@ -106,7 +106,7 @@ void process_get_operation(int sock, char *hostName)
 {
 	char *buffer_out = malloc(MAX_REQUEST_SIZE);
 	char *buffer_in = malloc(MAX_RESPONSE_SIZE);
-    //char *ruta = malloc(MAX_PATH_SIZE);
+    char *ruta = malloc(MAX_PATH_SIZE);
 	//printf("Introdueixi una ruta: \n");
 	//scanf("%s", ruta);
     sprintf(buffer_out, "GET / HTTP/1.1\r\nHost: %s\r\n\r\n", hostName);
